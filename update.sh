@@ -1,5 +1,4 @@
-sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf && sudo pacman -Syy
-u && sudo pacman -S --needed gamescope lib32-vulkan-icd-loader lib32-vulkan-radeon vul
+sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf && sudo pacman -S --needed gamescope lib32-vulkan-icd-loader lib32-vulkan-radeon vul
 kan-icd-loader vulkan-radeon && sudo pacman -S --needed lib32-libglvnd lib32-nvidia-ut
 ils lib32-vulkan-icd-loader libglvnd nvidia vulkan-icd-loader && sudo pacman -S --need
 ed giflib gnutls gst-plugins-bad gst-plugins-base gst-plugins-base-libs gst-plugins-go
