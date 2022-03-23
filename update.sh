@@ -36,4 +36,4 @@ sudo systemctl start fail2ban
 
 echo "listening ports"
 sudo netstat -tunlp 
-&& 
+&& exit
