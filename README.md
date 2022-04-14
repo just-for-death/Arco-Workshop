@@ -1,4 +1,3 @@
 # Arco-Workshop
-Test series 1
-
-pull up
+Stable arco config && updates
+currently only updates and imp apps
