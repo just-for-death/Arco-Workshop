@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>NewsFlash OPML export</title>
+  </head>
+  <body>
+    <outline text="News" title="News">
+      <outline htmlUrl="https://news.google.com/?hl=en-IN&amp;gl=IN&amp;ceid=IN:en" text="Google News" type="rss" title="Google News" xmlUrl="http://news.google.com/?output=rss" />
+      <outline title="World Google" text="World Google" htmlUrl="https://news.google.com/?topic=w&amp;cf=all&amp;num=20&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" xmlUrl="https://www.google.com/news?output=rss&amp;topic=w&amp;ned=us&amp;cf=all&amp;num=20" />
+    </outline>
+    <outline title="Tech" text="Tech">
+      <outline xmlUrl="https://news.google.com/news/rss/headlines/section/topic/TECHNOLOGY?ned=us&amp;hl=en" title="Technology Google " text="Technology Google " type="rss" htmlUrl="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&amp;gl=US&amp;ceid=US:en" />
+    </outline>
+    <outline title="Science" text="Science">
+      <outline xmlUrl="https://www.google.com/news?output=rss&amp;topic=snc&amp;ned=us&amp;cf=all&amp;num=20" text="Science Google " type="rss" title="Science Google " htmlUrl="https://news.google.com/?topic=snc&amp;cf=all&amp;num=20&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+      <outline text="ScienceDaily" htmlUrl="https://www.sciencedaily.com/" title="ScienceDaily" type="rss" xmlUrl="http://www.sciencedaily.com/newsfeed.xml" />
+    </outline>
+    <outline title="Culture" text="Culture">
+      <outline xmlUrl="http://www.newyorker.com/feed/culture" htmlUrl="https://www.newyorker.com/culture" text="Culture" title="Culture" type="rss" />
+      <outline xmlUrl="http://feeds.feedburner.com/bookriot/WlRy" type="rss" htmlUrl="https://bookriot.com/" title="BOOK RIOT" text="BOOK RIOT" />
+    </outline>
+    <outline text="Anime" title="Anime">
+      <outline text="AnimeNation" htmlUrl="https://www.animenation.net/blog" title="AnimeNation" xmlUrl="http://www.animenation.net/blog/feed/" type="rss" />
+      <outline text="/a/ - Anime &amp; Manga" title="/a/ - Anime &amp; Manga" type="rss" xmlUrl="http://boards.4chan.org/a/index.rss" htmlUrl="http://boards.4chan.org/a/" />
+      <outline type="rss" xmlUrl="http://news.google.com/news?hl=en&amp;gl=us&amp;q=anime&amp;um=1&amp;ie=UTF-8&amp;output=rss" htmlUrl="https://news.google.com/search?hl=en-US&amp;gl=US&amp;q=anime&amp;um=1&amp;ie=UTF-8&amp;ceid=US:en" title="Anime Google" text="Anime Google" />
+      <outline htmlUrl="https://www.mangaupdates.com/" title="Baka Updates Manga" xmlUrl="http://www.mangaupdates.com/rss.php" type="rss" text="Baka Updates Manga" />
+      <outline xmlUrl="http://comicsworthreading.com/category/manga/feed/" text="Comics Worth Reading" title="Comics Worth Reading" type="rss" htmlUrl="https://comicsworthreading.com/" />
+      <outline htmlUrl="https://comicbook.com/feed/rss/" type="rss" xmlUrl="http://comicbook.com/feed/" title="Comicbook.com" text="Comicbook.com" />
+    </outline>
+    <outline text="Passion" title="Passion">
+      <outline type="rss" text="Linux, GNU/Linux, free software..." title="Linux, GNU/Linux, free software..." htmlUrl="https://www.reddit.com/r/linux/" xmlUrl="http://www.reddit.com/r/linux/.rss" />
+      <outline text="LinuxSecurity" title="LinuxSecurity" type="rss" htmlUrl="https://www.linuxsecurity.com/" xmlUrl="http://www.linuxsecurity.com/static-content/linuxsecurity_advisories.rss" />
+      <outline text="LinuxScrew" type="rss" htmlUrl="https://www.linuxscrew.com/" xmlUrl="http://feeds.feedburner.com/linuxscrew" title="LinuxScrew" />
+      <outline type="rss" htmlUrl="https://www.tecmint.com/" title="Linux Commands" text="Linux Commands" xmlUrl="http://www.tecmint.com/category/linux-commands/feed/" />
+      <outline type="rss" htmlUrl="https://www.fosslinux.com/" text="FOSS Linux" title="FOSS Linux" xmlUrl="http://www.fosslinux.com/feed" />
+      <outline htmlUrl="https://fossbytes.com/" title="Fossbytes" text="Fossbytes" type="rss" xmlUrl="http://feeds.feedburner.com/Fossbytes" />
+      <outline type="rss" htmlUrl="https://www.reddit.com/r/opensource/" title="Open Source on Reddit" text="Open Source on Reddit" xmlUrl="http://www.reddit.com/r/opensource/.rss" />
+    </outline>
+  </body>
+</opml>
