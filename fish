@@ -1,1 +1,0 @@
-/home/lucy/.config/fish
