@@ -1,5 +1,4 @@
 .obsidian/cache
 .trash/
 .DS_Store
-ssh_sync.sh/
-dotfiles/
+ssh_sync.sh
