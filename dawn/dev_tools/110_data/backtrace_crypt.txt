@@ -1,0 +1,77 @@
+===== Part 1
+
+Sysinternals' ProcMon
+
+
+DLL               Memory offset     Size
+---------------------------------------------
+crypt32.dll       0x7ffb5df60000    0x15d000
+UnityPlayer.dll   0x7ffb3ab90000    0x2124000
+UserAssembly.dll  0x7ffb2b9a0000    0x74ae000
+
+
+N°  DLL name          Memory offset    Call VA     Function start VA + Description
+----------------------------------------------------------------------------------
+<nt internals>
+22  crypt32.dll       0x7ffb5df616a9      [CryptQueryObject]
+23  UnityPlayer.dll   0x7ffb3c069b7d   1814d9b77   1814d9fe0  Checks 1 file
+24  UnityPlayer.dll   0x7ffb3c0748d7   1814e48d2   1814e4480  Checks multiple files
+25  UnityPlayer.dll   0x7ffb3c979aea  ?181de9aea      ??      Obfuscated
+26  UnityPlayer.dll   0x7ffb3b54e300   1809be2fa  ?1809be2ed  Poiner call in RAM
+27  UserAssembly.dll  0x7ffb2d285e86   1818e5e81   1818e5a40  JDOLLLDKIAH_FNOBHGHDEFL login, record user data
+28  UserAssembly.dll  0x7ffb2c8d914f   180f3914a   180f39020  EMDOOJFMAFO_FMIMJHLBKHF scene manager, void() func
+29  UserAssembly.dll  0x7ffb2c8f22f2   180f522ed   180f52220  EMDOOJFMAFO_OLKFFMFKDGG scene manager, void() func
+30  UserAssembly.dll  0x7ffb2d4d3508   181b33506   181b33380  NBHFAFPNMFJ_TData_LPECKINONOE_System_Object__Invoke (indirect function call)
+31  UserAssembly.dll  0x7ffb2cfe090e   181640909   1816405d0  HBDCEMPPDBC_BLOEOBAFLDM action handler
+32  UserAssembly.dll  0x7ffb2c8e6637   180f46632   180f45ea0  EMDOOJFMAFO_JNCDIEGFDOM scene manager, game manager
+33  UserAssembly.dll  0x7ffb2c8deb4c  ~180F3EB4C     ??
+34  UserAssembly.dll  0x7ffb2dbf4941   18225493f   1822547d0  PHPNKGGINJA_ENLPMLLNNPL GlobalManager function
+35  UserAssembly.dll  0x7ffb2d28245b  
+36  UserAssembly.dll  0x7ffb2dc37037  
+<main game loop etc>
+
+
+N°  DLL name          Memory offset    Call VA     Function start VA + Description
+----------------------------------------------------------------------------------
+<nt internals>
+14  KernelBase.dll   0x7ffb5e3b78c6       [CreateFileW]
+15  UnityPlayer.dll  0x7ffb3c00ce5f
+16  UnityPlayer.dll  0x7ffb3c00c699
+17  UnityPlayer.dll  0x7ffb3c00d175
+18  UnityPlayer.dll  0x7ffb3c014952
+19  UnityPlayer.dll  0x7ffb3bffb28b
+20  UnityPlayer.dll  0x7ffb3bffb310
+21  UnityPlayer.dll  0x7ffb3c069363
+22  UnityPlayer.dll  0x7ffb3c069ed8
+23  UnityPlayer.dll  0x7ffb3c069ffd    1814d9ff8    1814d9fe0  Checks 1 file
+24  UnityPlayer.dll (0x7ffb3c0748d7)
+<same as N° 24 above>
+
+
+===== Part 2
+
+"Memory viewer" -> "UserAssembly.dll+1000"
+"Exception Breakpoint" -> "Break on Access"
+REQUIRES UNITYPLAYER FILE WHICH DOES NOT DISABLE THE MHYPROT SERVICE
+
+DLL/Symbol         Call VA
+---------------------------
+bcrypt.BCryptHashData  1877
+rsaenh.dll           1835FB     
+CRYPTSP.dll          1820C4    
+UnityPlayer.dll   1814DD270
+UnityPlayer.dll   1814EDADF
+UnityPlayer.dll   1814E42D5 // start 1814e4030 HASH
+UnityPlayer.dll   181DE9AB3
+UnityPlayer.dll   1809BE300
+UserAssembly.dll  1818E5E39 // JDOLLLDKIAH_FNOBHGHDEFL login, record user data
+UserAssembly.dll  180F3914F // EMDOOJFMAFO_FMIMJHLBKHF scene manager
+UserAssembly.dll  180F522F2 // EMDOOJFMAFO_OLKFFMFKDGG
+UserAssembly.dll  181B33508
+UserAssembly.dll  18164090E // HBDCEMPPDBC_BLOEOBAFLDM
+UserAssembly.dll  180F46637 // EMDOOJFMAFO_JNCDIEGFDOM
+UserAssembly.dll  180F3EB4C
+UserAssembly.dll  182254941
+UserAssembly.dll  1818E245B
+UserAssembly.dll  182297037 // Func_2_Object_UInt64__Invoke
+<main game loop etc>

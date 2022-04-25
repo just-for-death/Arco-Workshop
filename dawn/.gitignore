@@ -1,0 +1,17 @@
+
+# No binary files!
+
+*.dll
+*.exe
+*.sys
+
+# Includes *.bak etc
+UnityPlayer.dll.*
+
+# dxvk cache and debug files
+*.dxvk-cache
+*.log
+
+# version control
+*.diff
+*.patch

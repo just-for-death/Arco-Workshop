@@ -1,0 +1,11 @@
+[Desktop Entry]
+DefaultProfile=XeroDracul.profile
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAw8AAAGRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+NewTabButton=true
