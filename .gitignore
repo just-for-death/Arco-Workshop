@@ -2,4 +2,4 @@
 .trash/
 .DS_Store
 ssh_sync.sh/
-dotfiles/.git/
+dotfiles/
