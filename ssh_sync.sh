@@ -1,6 +1,6 @@
  #!/usr/bin/env sh
 
-SSH_PATH="/run/media/lucy/Elements/Arco-Workshop/"
+SSH_PATH="/home/elsa/Documents/Arco-Workshop"
 
 cd "$SSH_PATH"
 
